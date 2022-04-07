@@ -1,0 +1,353 @@
+.menu,
+.contacts,
+.fixed-menu,
+.specifications__list,
+.desctop-team-list{display: none;}
+
+.mobile-team-list{
+  display: flex;
+}
+
+.container{
+  width: $adaptiveWidth;
+}
+.hello-section__container{
+  background-position: center top 32%;
+  background-size: 45%;
+}
+
+.header{
+  padding-right: 0;
+}
+
+.menu{
+  margin-right: 0;
+}
+
+.hello-section__main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  padding: 0 1.4rem;
+}
+
+.hello-section__title{
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1rem;
+  line-height: .9;
+}
+
+.hello-section__caption {
+  display: block;
+  max-width: 23.18rem;
+  text-align: center;
+  margin-bottom: 1.43rem;
+}
+.gamburger-menu{
+  display: block;
+  height: 1.62rem;
+  width: 1.5rem;
+}
+//==================================== features ======================================
+.features__hero{
+  margin-bottom: 3rem;
+}
+
+.content__item{
+  padding: 0;
+  &:before{
+    display: none;
+  }
+  &:nth-child(2){
+    flex: 1.5;
+  }
+}
+
+.content__img{
+  margin-bottom: .9rem;
+}
+
+.content__title{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.features__title{
+  margin-bottom: 0;
+}
+
+.features__subtitle{
+  padding: 0 10%;
+}
+
+.content__desc{
+  padding: 0;
+}
+
+.content__desc--narrow{
+  padding: 0 2rem;
+}
+
+//====================================== shop =========================================
+.slider-box{
+  overflow: hidden;
+}
+
+.shop__box:before {
+  right: 0;
+  bottom: -14.7rem;
+}
+
+.slider__item{
+  flex-direction: column;
+  align-items: center;
+}
+
+.shop__block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 19.12rem;
+  height: 19.12rem;
+  flex-shrink: 0;
+  margin-right: 0;
+  margin-bottom: 3rem;
+}
+
+.shop__title{
+  font-size: 1.75rem;
+  margin-bottom: .87rem;
+}
+
+.hidden-specifications{
+  display: none;
+}
+
+.shop__content{
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.shop__desc{
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.shop__list{
+  justify-content: center;
+}
+
+.shop__price{
+  font-size: 2.5rem;
+}
+
+.prev-next{
+  top: 25%;
+  left: 19%;
+}
+
+.prev-next--position{
+  left: 75%;
+}
+
+//====================================== team =========================================
+.team__title{
+  margin-bottom: 1.31rem;
+}
+
+.team__list{
+  flex-direction: column;
+  align-items: center;
+}
+
+.team__item{
+  margin-bottom: 1.25rem;
+  margin-right: 0;
+}
+
+.team__content{
+  padding: 0;
+}
+
+.team__block{
+  margin-bottom: 1.75rem ;
+}
+
+.team__name{
+  font-size: 1.12rem;
+}
+
+.team__postion{
+  font-size: 1.12rem;
+}
+
+.triangle-popup{
+  fill: #365A49;
+}
+
+.team__general{
+  position: relative;
+  top: .43rem;
+  left: 0;
+}
+.select{
+  height: 26rem;
+}
+
+//===================================== accordion =====================================
+.accordion__box{
+  background-size: cover;
+}
+
+
+//====================================== feedback =====================================
+
+.feedback__user{
+  margin-bottom: 1.87rem;
+  padding-top: 3.5rem;
+  min-height: 29rem;
+  &:before{
+    transform: translate(-50%, -50%);
+  }
+}
+
+.feedback__item{
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback__img{
+  display: block;
+  width: 8.12rem;
+  height: 8.12rem;
+  margin-bottom: 2rem;
+  margin-right: 0;
+}
+
+.feedback__avatar{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feedback__context{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback__subtitle, .feedback__text{
+  margin-bottom: 1rem;
+}
+
+.feedback__text{
+  width: 100%;
+  padding: 0 1.43rem;
+  text-align: center;
+}
+
+//=============================================== player ==========================
+.player{
+  display: contents;
+  width: 37.15rem;
+  height: 21.93rem;
+}
+
+.player-section__box:before {
+  left: 0;
+  top: -14.2rem;
+}
+
+//=============================================== form =============================
+.form{
+  flex-direction: column;
+  padding: 0 8rem;
+  &__title{
+    margin-bottom: 1.12rem;
+  }
+  &__col{
+    margin-right: 0;
+    margin-bottom: .9rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form-section__container:before {
+  right: 0;
+  top: -13.52rem;
+}
+.form__row{
+  margin-bottom: .9rem;
+  &:last-child{
+    margin-bottom: 0;
+  }
+
+}
+.form__input{
+  height: 2.25rem;
+  padding: .2rem;
+}
+
+.form__row--textarea{
+  margin-bottom: 1.5rem;
+}
+
+.form--mb{
+  margin-bottom: 2.5rem;
+}
+
+.form__textarea{
+  height: 5.12rem;
+}
+.form__button{
+  justify-content: center;
+}
+.form__btn-reset{
+  color: red;
+  padding: 0 .9rem;
+}
+
+//============ footer ============
+.contacts--visible{
+  display: block;
+}
+
+.footer.contacts{
+  display: block;
+}
+
+.footer__address{
+  font-size: 1.31rem;
+}
+
+.contacts{
+  color: $red;
+}
+
+.contacts__phone{
+  font-size: 18px;
+}
+
+.contacts__pic{
+  width: .75rem;
+  height: .75rem;
+  fill: $red;
+}
+
+.social{
+  transform: translateX(-2rem);
+}
+
+

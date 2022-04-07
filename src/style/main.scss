@@ -1,0 +1,53 @@
+//normalize
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css";
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400;1,700&family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Open+Sans:ital,wght@0,600;1,400;1,700&family=Play:wght@400;700&display=swap');
+
+$alegriaSans: "Alegreya Sans", Arial, Helvetica, sans-serif;
+$play: "Play", Arial, Helvetica, sans-serif;
+
+//color
+$grey: #F5F5F5;
+$black: #000;
+$title: #292929;
+$red: #E01F3D;
+$btnActive: #CA1B36;
+$text: #666;
+
+//variable
+$containerWidth: 940px;
+$baseFontSize: 16px;
+
+$adaptiveWidth: 95%;
+$tablets: 768px;
+$mobiles: 480px;
+
+//components
+@import "block/base.scss";
+@import "block/hello-section.scss";
+@import "block/features.scss";
+@import "block/shop.scss";
+@import "block/team.scss";
+@import "block/feedback.scss";
+@import "block/accordion.scss";
+@import "block/form.scss";
+@import "block/fixed-menu.scss";
+@import "block/map.scss";
+@import "block/fullscreen-menu/fullscreen-menu.scss";
+@import "block/message.scss";
+@import "block/player.scss";
+
+//media
+@media (max-width: $tablets) {
+  @import "block/adaptive-tablet/adaptive-tablet.scss";
+
+}
+
+@media  (max-width: $mobiles){
+  html{
+    font-size: 3.34vmin;
+  }
+  @import "block/adaptive-mobile/adaptive-mobile.scss";
+}

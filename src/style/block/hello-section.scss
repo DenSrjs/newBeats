@@ -1,0 +1,115 @@
+.hello-section{
+  background-color: $grey;
+  padding-bottom: 3.12rem;
+}
+
+.hello-section__container{
+  background: url("./image/hello-section/headphones.png") right center / 50% auto no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  &:before{
+    content: "";
+    width: 2.87rem;
+    height: 2.87rem;
+    background: url("./image/element/Rectangle.png") no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: -5rem;
+  }
+}
+
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.12rem;
+  font-family: $alegriaSans;
+  margin-right: 2.87rem;
+  &__item{
+    margin-right: 1.69rem;
+  }
+  &__item:last-child{
+    margin-right: 0;
+  }
+}
+
+.header {
+  display: flex;
+  padding-top: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1.5rem;
+
+    &__logo{
+      margin-right: 2.37rem;
+    }
+}
+
+.gamburger-menu{
+  display: none;
+}
+
+.contacts{
+  display: flex;
+  align-items: center;
+}
+
+.contacts__pic{
+  width: .81rem;
+  height: .81rem;
+  margin-right: .37rem;
+}
+
+.contacts__phone{
+  font-style: normal;
+  font-size: 1.12rem;
+}
+
+/*===========================================================================================================*/
+.hello-section__main{
+  width: 35%;
+}
+
+.hello-section__title{
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+}
+
+.hello-section__caption{
+  font-size: 1.31rem;
+  font-family: $alegriaSans;
+  line-height: 1;
+  margin-bottom: 2.25rem;
+}
+
+/*===============================================================================================*/
+.specifications__list{
+  display: flex;
+}
+
+.specifications__item{
+  display: flex;
+  width: 10.37rem;
+  height: 3.5rem;
+  align-items: center;
+  margin-right: .5rem;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.specifications__img{
+  margin-right: .69rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.specification__text{
+  max-width: 6.25rem;
+}
+

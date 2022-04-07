@@ -1,0 +1,30 @@
+.message{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(13, 13, 13,  .8);
+  display: none;
+}
+
+.message__box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 19.31rem;
+  height: 11rem;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.message__text{
+  margin-bottom: 1.12rem;
+  text-align: center;
+}
+
+.modal-js-visible{
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,172 @@
+.shop{
+  background: $grey;
+  &__box{
+    display: flex;
+    &:before{
+      content: "";
+      width: 2.87rem;
+      height: 2.87rem;
+      background: url("./image/element/el_2.png") no-repeat;
+      position: absolute;
+      right: 0;
+      bottom: -18.9rem;
+    }
+  }
+}
+.slider-box{
+  position: relative;
+  overflow: hidden;
+}
+
+.slider{
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: left 1s;
+}
+
+.slider__item{
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.shop__block{
+  width: 28.25rem;
+  height: 28.25rem;
+  flex-shrink: 0;
+  margin-right: 3.45rem;
+}
+
+.shop__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shop__content{
+  display: flex;
+  flex-direction: column;
+  width: 27rem;
+}
+.shop__title{
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+.hidden-specifications{
+  position: relative;
+  width: 5.68rem;
+  height: 5.68rem;
+  background: #9A9A9A;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 1.56rem;
+}
+
+.hidden-specifications__svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2.62rem;
+  height: 2.62rem;
+  fill: #fff;
+}
+
+//=========== скрытый список ======
+.table{
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(40px);
+  border-radius: 4px;
+  border-collapse: separate;
+  border-spacing: 1.75rem;
+  width: 17rem;
+  opacity: 0;
+  transition: opacity .3s;
+  z-index: -10;
+}
+.table__icon{
+  width: 2rem;
+  height: 2rem;
+}
+
+.hidden-specifications:hover{
+    & .table{
+      z-index: 10;
+      opacity: 1;
+    }
+}
+
+//=================================
+
+.shop__heading,
+.shop__desc{
+  font-size: 1rem;
+  color: $text;
+}
+
+
+.shop__desc{
+  padding-right: 3.3rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.2;
+}
+
+.shop__list,
+.shop__buy{
+  display: flex;
+}
+
+.shop__list{
+  margin-bottom: 1.5rem;
+}
+
+.shop__item{
+  margin-right: 5.37rem;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+.shop__text{
+  font-size: 1.12rem;
+  font-weight: bold;
+}
+.shop__price{
+  font-size: 2.25rem;
+  margin-right: 1.37rem;
+}
+
+.prev-next__arrow{
+  width: .87rem;
+  height: 1.75rem;
+  fill: none;
+  stroke: black;
+  stroke-linecap: round;
+  stroke-width: 2;
+  cursor: pointer;
+}
+
+.prev-next{
+  position: absolute;
+  top: 46%;
+  left: -5%;
+  transform: translateY(25%);
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  z-index: 15;
+}
+
+.prev-next--position{
+    margin-right: 0;
+    margin-left: 2rem;
+    left: 94%;
+}

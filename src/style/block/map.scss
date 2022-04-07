@@ -1,0 +1,51 @@
+.map{
+  position: relative;
+  &__block{
+    width: 100%;
+    height: 100%;
+  }
+  &__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+}
+
+.footer__block{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+}
+
+.footer__contacts{
+  font-size: 1.12rem;
+}
+
+.social{
+  display: flex;
+  align-items: center;
+
+  &__item{
+    margin-right: .62rem;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+.social__icon{
+  width: 1.87rem;
+  height: 1.87rem;
+  fill: #B3B3B3;
+  transition: .3s;
+  &:hover{
+    fill: $black;
+  }
+}

@@ -1,0 +1,125 @@
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  font-size: $baseFontSize;
+  font-family: $play;
+  line-height: 1.42;
+  color: $title;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  & li{
+    list-style: none;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+p{
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  margin: 0;
+  font-weight: normal;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+footer{
+  position: relative;
+  width: 100%;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+button{
+  cursor: pointer;
+  background: transparent;
+  border: transparent;
+}
+
+.wrapper{
+  position: relative;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrapper__content{
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
+}
+
+.container{
+  position: relative;
+  margin: 0 auto;
+  width: auto;
+  max-width: $containerWidth;
+}
+
+.section{
+  //height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.button{
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1.12rem 2.56rem;
+  background: $red;
+  color: #fff;
+  border-radius: 100px;
+  border: none;
+  transition: .3s;
+  &:hover{
+    background: $btnActive;
+  }
+}
+
+.form__btn-reset:hover{
+  background: none;
+  color: red;
+}
+
+.fullscreeen-menu{
+  display: none;
+}

@@ -1,0 +1,96 @@
+.features__container:before{
+  content: "";
+  width: 2.87rem;
+  height: 2.87rem;
+  background: url("./image/element/el_1.png") no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: -18.5rem;
+}
+
+
+.features__hero{
+  margin-bottom: 3.87rem;
+}
+
+.features__title{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: .43rem;
+}
+
+.features__subtitle{
+  text-align: center;
+  padding:  0 20%;
+  font-weight: normal;
+  color: #666;
+  font-size: 1rem;
+}
+
+.content__list{
+  display: flex;
+}
+
+.content__item{
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+  &:before{
+    content: url("./image/features-section/Combined_shape.png");
+    position: absolute;
+    top: 3.75rem;
+    right: 0;
+    transform: translateX(50%);
+  }
+  &:last-child{
+    padding-right: 0;
+    &:before{
+      display: none;
+    }
+  }
+  &:first-child{
+    padding-left: 0;
+  }
+}
+
+.content__img{
+  margin-bottom: .56rem;
+  width: 8rem;
+  height: 8rem;
+  display: inline-block;
+  background-color: #F2F5F4;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.content__img-wrapper{
+  width: 4.25rem;
+  height: 4.25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img--position--left{
+  left: 38.3%;
+}
+
+.content{
+  text-align: center;
+}
+
+.content__title{
+  margin-bottom: .43rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.content__desc{
+  padding:0 6%;
+  font-size: 1rem;
+  line-height: 1.2;
+}
